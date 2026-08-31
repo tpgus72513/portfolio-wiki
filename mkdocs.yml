@@ -42,6 +42,7 @@ markdown_extensions:
 nav:
   - 홈: index.md
   - 프로젝트:
+      - 세종페이(PAYUS): projects/sejong-pay.md
       - 올클 티켓팅 시뮬레이터: projects/ticketing-simulator.md
       - 다이내믹 뷰티 큐레이터: projects/dynamic-beauty-curator.md
       - AI 기반 소상공인 지원 플랫폼: projects/ai-mentoring-internship.md
