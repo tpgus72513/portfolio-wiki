@@ -1,0 +1,47 @@
+site_name: 나의 기술 포트폴리오
+site_description: 프로젝트에서 내린 기술적 결정과 문제 해결 과정을 정리한 공개 포트폴리오
+site_url: https://tpgus72513.github.io/portfolio-wiki/
+repo_url: https://github.com/tpgus72513/portfolio-wiki
+repo_name: tpgus72513/portfolio-wiki
+edit_uri: ""
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 어두운 화면으로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 밝은 화면으로 전환
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - 홈: index.md
+  - 프로젝트:
+      - 올클 티켓팅 시뮬레이터: projects/ticketing-simulator.md
+      - 다이내믹 뷰티 큐레이터: projects/dynamic-beauty-curator.md
+      - AI 기반 소상공인 지원 플랫폼: projects/ai-mentoring-internship.md
