@@ -8,9 +8,16 @@ edit_uri: ""
 theme:
   name: material
   language: ko
+  font: false
+  icon:
+    logo: material/code-braces-box
+    repo: fontawesome/brands/github
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -32,6 +39,22 @@ theme:
 
 plugins:
   - search
+  - glightbox:
+      auto_caption: true
+      auto_themed: true
+      background: none
+      shadow: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tpgus72513
+      name: tpgus72513 on GitHub
+
+copyright: Copyright &copy; 2026 권세현
 
 markdown_extensions:
   - attr_list
